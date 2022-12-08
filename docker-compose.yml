@@ -1,0 +1,13 @@
+version: "3"
+services:
+  remote-dev:
+    image: remote-dev
+    restart: on-failure
+    container_name: remote-dev
+    ports:
+      - "7654:22"
+    # environment:
+    #   - RESOLUTION=1920x1080
+    # volumes:
+    #   - /Users/fridge/dev/cpp/sim_node:/root/sim_node
+     
